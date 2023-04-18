@@ -102,15 +102,3 @@ jobs:
           template: classic
           base: repositories
           config_timezone: Australia/Melbourne
-
-  rss:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: rss.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_rss: yes
-          plugin_rss_source: https://dev.to/feed/nzspambot/
-          plugin_rss_limit: 4
