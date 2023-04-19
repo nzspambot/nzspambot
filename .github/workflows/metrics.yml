@@ -112,3 +112,16 @@ jobs:
           template: classic
           base: repositories
           config_timezone: Australia/Melbourne
+          
+  org-repositories:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: org-repositories.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: nzspambot-org
+          template: classic
+          base: repositories
+          config_timezone: Australia/Melbourne
