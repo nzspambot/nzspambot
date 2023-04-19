@@ -3,10 +3,15 @@
 </a>
 <br/>
 <a href="https://github.com/nzspambot">
-  <img align="center" width="49%" src="./repositories.svg" />
+  <img align="left" width="49%" src="./repositories.svg" />
 </a>
+
 <a href="https://github.com/nzspambot">
-  <img align="center" width="49%" src="./acti_comm.svg" />
+  <img align="center" width="49%" src="./org-repositories.svg" />
+</a>
+
+<a href="https://github.com/nzspambot">
+  <img align="left" width="49%" src="./acti_comm.svg" />
 </a>
 
 <a href="https://github.com/nzspambot">
@@ -14,17 +19,9 @@
 </a>
 
 <a href="https://github.com/nzspambot">
-    <img align="center" width="49%" src="./issue_pr_lang.svg" />
+    <img align="left" width="49%" src="./issue_pr_lang.svg" />
 </a>
 
 <a href="https://github.com/nzspambot">
     <img align="center" width="49%" src="./achievements.svg" />
-</a>
-
-<a href="https://github.com/nzspambot">
-    <img align="center" width="49%" src="./lines-of-code.svg" />
-</a>
-
-<a href="https://github.com/nzspambot">
-    <img align="center" width="49%" src="./metrics.plugin.calendar.svg" />
 </a>
