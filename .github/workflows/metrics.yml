@@ -23,6 +23,22 @@ jobs:
           plugin_achievements_display: compact  # Use compact display
           plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
 
+  org-achievements:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: org-achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: nzspambot-org
+          base: achievements
+          plugin_achievements: yes
+          plugin_achievements_threshold: B      # Display achievements with rank B or higher
+          plugin_achievements_secrets: yes      # Display unlocked secrets achievements
+          plugin_achievements_display: compact  # Use compact display
+          plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
+
   github-metrics:
     runs-on: ubuntu-latest
     steps:
@@ -35,6 +51,22 @@ jobs:
           template: classic
           base: header
           config_timezone: Australia/Melbourne
+
+  org-github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: org-header.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: nzspambot-org
+          template: classic
+          base: header
+          config_timezone: Australia/Melbourne
+
+
+
   lines:
     runs-on: ubuntu-latest
     steps:
@@ -68,6 +100,21 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: nzspambot
+          template: classic
+          base: ""
+          config_timezone: Australia/Melbourne
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+  org_iso_calender:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: org_iso_calender.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: nzspambot-org
           template: classic
           base: ""
           config_timezone: Australia/Melbourne
